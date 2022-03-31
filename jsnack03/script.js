@@ -8,7 +8,9 @@
 //Flowchart
 // A --> B[INIZIO]
 // B --> C[Chiedi di inserire un numero di 4 cifre]
-// C --> D[somma le tutte le cifre]
-// D --> E[stampa i risultati]
+// C --> D{check se sono 4 cifre}
+// D -->|si| E[somma le tutte le cifre]
+// D -->|no| F[Inserimento non corretto. Riprova]
+// E && F [stampa i risultati]
 // E --> Z[FINE]
 
