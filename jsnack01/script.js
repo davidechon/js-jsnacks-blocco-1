@@ -17,3 +17,20 @@
 
 const listaInvitati = ['Aurora', 'Davide', 'Ginevra', 'Lorenzo', 'Alice', 'Federico', 'Giorgia', 'GianMarco', 'Maddalena',  'Andrea',]
 
+let nomeUtente = prompt('Inserisci il tuo nome');
+let trovata = false;
+let index;
+
+for(let i = 0; i < listaInvitati.length; i++){
+  if(nomeUtente == listaInvitati[i]){
+    trovata = true;
+    index = i;
+    // console.log(listaInvitati);
+    console.log(nomeUtente, " può partecipare alla festa");
+  } else {
+    console.log(nomeUtente, "Accesso negato")
+  }
+}
+
+
+
