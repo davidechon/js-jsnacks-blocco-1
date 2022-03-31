@@ -1,4 +1,4 @@
-alert("Hello World! 02");
+// alert("Hello World! 02");
 
 // Consegna
 // JSnack 2
@@ -16,3 +16,12 @@ alert("Hello World! 02");
 // F -->|falso| H[Riprova]
 // G && H --> Z[FINE]
 
+let arrayVuoto = [];
+
+for(let numDispari = 0; numDispari < 6; numDispari++){
+  let numInserito = parseInt(prompt('Inserisci un numero da 1 a 10'));
+  if(numInserito % 2 !== 0){
+    arrayVuoto++
+  }
+  console.log(numDispari, numInserito, arrayVuoto);
+}
