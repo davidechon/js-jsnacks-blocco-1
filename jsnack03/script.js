@@ -23,25 +23,23 @@ let contaNum;
 if(numUser.length == 4){
   console.log(numUser + " - " +  numUser.length);
   // D -->|si| E[somma le tutte le cifre]
-  contaNum = numUser.spit("");
+  contaNum = numUser.split("");
+  console.log(contaNum);
+  let somma = 0;
+  let index = 0;
+  while (index < contaNum.length){
+    console.log('index: ', index)
+    console.log('conta numero: ', contaNum[index])
 
+    somma += parseInt(contaNum[index]); 
+    // E && F [stampa i risultati]
+    console.log('somma: ', somma)
+    index++
+  }
+  
 }else{
   // D -->|no| F[Inserimento non corretto. Riprova]
   alert("Inserimento non corretto. Ricarica la pagina");
 }
-
-// E && F [stampa i risultati]
-
 // E --> Z[FINE]
 
-
-
-//////////////////////////////////////////////
-// let arrayVuoto = [];
-// for(let numDispari = 0; numDispari < 6; numDispari++){
-//  let numInserito = parseInt(prompt('Inserisci un numero da 1 a 10'));
-//   if(numInserito % 2 !== 0){
-//     arrayVuoto.push=(numInserito);
-//   }
-//   console.log(numDispari, numInserito, arrayVuoto);
-// }
